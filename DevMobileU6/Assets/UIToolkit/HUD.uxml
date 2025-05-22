@@ -1,0 +1,13 @@
+<engine:UXML xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:engine="UnityEngine.UIElements" xmlns:editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <engine:VisualElement name="VisualElement" style="flex-grow: 1;">
+        <engine:ProgressBar name="ProgressBar">
+            <Bindings>
+                <engine:DataBinding property="value" data-source-path="health" data-source="project://database/Assets/Scripts/UIToolkit/HealthStats.asset?fileID=11400000&amp;guid=ab1e26c3c402d4473a91a6c7ba353522&amp;type=2#HealthStats" binding-mode="ToTarget" />
+            </Bindings>
+        </engine:ProgressBar>
+        <engine:ProgressBar name="ProgressBar-DB-script" />
+    </engine:VisualElement>
+    <engine:VisualElement style="flex-grow: 0;">
+        <engine:Label text="The top bar is controlled by the Scriptable Object instance (Assets/Scripts/UIToolkit/HealthStats). Even when not in play-mode.&#10;The bottom bar is controlled by the BindingTest script on the cube. Click the cube!&#10;Both use Data Binding but in a different way." name="Info" style="flex-wrap: nowrap; white-space: normal; -unity-font-style: bold;" />
+    </engine:VisualElement>
+</engine:UXML>
